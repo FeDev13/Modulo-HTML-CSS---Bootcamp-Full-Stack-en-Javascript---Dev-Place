@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="titulo"><h1>Courts Online</h1></div>
+        <ul>
+          <a>Home</a>
+          <a>Sobre nosotros</a>
+          <a>Producto</a>
+          <a>Para empresas</a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>Bienvenido a Courts Online</h1>
+        <p>
+          Somos la primer plataforma online de reserva de canchas de tenis
+          integrada con informacion para reservar turnos en cualquier club de la
+          ciudad
+        </p>
+      </div>
+      <section class="art">
+        <h3>Por que elegirnos</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci,
+          modi. Hic minima necessitatibus voluptates quibusdam dolorem eius.
+          Illum, aut non. Quo nulla distinctio nemo quisquam ipsam repellat,
+          dolor tempore quos.
+        </p>
+      </section>
+
+      <div class="medio">
+        <img
+          id="imagen"
+          src="https://i.pinimg.com/originals/5c/4c/bd/5c4cbdd51838bb135612e815ff43bfca.jpg"
+          alt="clay court"
+        />
+        <div>
+          <h4><b>Tenemos todos los clubes de la ciudad</b></h4>
+          <p>Te acercamos a tu club de eleccion</p>
+        </div>
+      </div>
+      <section>
+        <h3>Seleccione club</h3>
+        <label for="clubs"></label>
+        <select name="clubs" id="clubs">
+          <option value="telefonos">Telefonos</option>
+          <option value="once unidos">Once Unidos</option>
+          <option value="club nautico">Club Nautico</option>
+          <option value="nacion">Club Nacion</option>
+        </select>
+      </section>
+      <section>
+        <h3>Seleccione su turno</h3>
+        <form action="">
+          <div class="form1">
+            <label id="name-label" for="name">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="name"
+              class="form-control"
+              placeholder="Ingrese su nombre"
+              required
+            />
+          </div>
+          <div class="form1">
+            <label id="name-label" for="last">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              id="last"
+              class="form-control"
+              placeholder="Ingrese su apellido"
+              required
+            />
+          </div>
+          <div class="form1">
+            <label id="name-label" for="email">Email</label>
+            <input
+              type="email"
+              name="name"
+              id="email"
+              class="form-control"
+              placeholder="Ingrese su email"
+              required
+            />
+          </div>
+          <div class="form1">
+            <label id="name-label" for="turno">Turno</label>
+            <input
+              type="datetime"
+              name="name"
+              id="turno"
+              class="form-control"
+              placeholder="Ingrese la hora de turno deseada"
+              required
+            />
+          </div>
+          <button class="boton">Solicitar turno</button>
+        </form>
+      </section>
+    </main>
+    <footer>Copyright FeDev13 2022</footer>
+  </body>
+</html>
