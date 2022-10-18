@@ -52,8 +52,11 @@ section {
 footer {
     background-color:rgb(27, 95, 95);
     color: aliceblue;
+    
 }
 #imagen {
     width: 50%;
     margin: 2rem;
 }
+
+
