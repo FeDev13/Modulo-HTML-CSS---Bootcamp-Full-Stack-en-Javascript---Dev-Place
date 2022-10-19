@@ -4,116 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Landing Page</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="titulo"><h1>Courts Online</h1></div>
-        <ul>
-          <a>Home</a>
-          <a>Sobre nosotros</a>
-          <a>Producto</a>
-          <a>Para empresas</a>
+    <header class="header">
+      <nav class="navbar">
+        <a class="navlogo">Courts Online</a>
+        <ul class="navmenu">
+          <li class="navitem">
+            <a class="navlink">Login</a>
+          </li>
+          <li class="navitem">
+            <a class="navlink">Nosotros</a>
+          </li>
+          <li class="navitem">
+            <a class="navlink">Servicio</a>
+          </li>
+          <li class="navitem">
+            <a class="navlink">Empresas</a>
+          </li>
         </ul>
+        <button class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </nav>
     </header>
     <main>
       <div class="intro">
-        <h1>Bienvenido a Courts Online</h1>
-        <p>
+        <h1 class="welcome">Bienvenido a Courts Online</h1>
+        <p class="texto">
           Somos la primer plataforma online de reserva de canchas de tenis
           integrada con informacion para reservar turnos en cualquier club de la
           ciudad
         </p>
       </div>
-      <section class="art">
-        <h3>Por que elegirnos</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci,
-          modi. Hic minima necessitatibus voluptates quibusdam dolorem eius.
-          Illum, aut non. Quo nulla distinctio nemo quisquam ipsam repellat,
-          dolor tempore quos.
-        </p>
-      </section>
+      <div class="login">
+        <button type="button" class="btn btn-primary" id="ingresar">
+          Ingresar
+        </button>
+      </div>
+      <div class="contain">
+        <div class="wrapper">
+          <div class="contacts">
+            <h3>contacto</h3>
 
-      <div class="medio">
-        <img
-          id="imagen"
-          src="https://i.pinimg.com/originals/5c/4c/bd/5c4cbdd51838bb135612e815ff43bfca.jpg"
-          alt="clay court"
-        />
-        <div>
-          <h4><b>Tenemos todos los clubes de la ciudad</b></h4>
-          <p>Te acercamos a tu club de eleccion</p>
+            <ul>
+              <li>Courts Online</li>
+              <li>+5492235448889</li>
+              <li>courtsonline@mail.com</li>
+            </ul>
+          </div>
+
+          <div class="form">
+            <h3>Envianos tu mensaje</h3>
+            <form action="">
+              <p>
+                <label for="">Nombre de la empresa</label>
+                <input type="text" />
+              </p>
+              <p>
+                <label for="">Representante</label>
+                <input type="text" />
+              </p>
+              <p>
+                <label for="">Email</label>
+                <input type="email" />
+              </p>
+              <p>
+                <label for="">Asunto</label>
+                <input type="text" />
+              </p>
+              <p class="full-width">
+                <label for="">Escriba su mensaje</label>
+                <textarea name="" id="" cols="30" rows="7"></textarea>
+              </p>
+              <p class="full-width">
+                <button class="enviar">Enviar</button>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
-      <section>
-        <h3>Seleccione club</h3>
-        <label for="clubs"></label>
-        <select name="clubs" id="clubs">
-          <option value="telefonos">Telefonos</option>
-          <option value="once unidos">Once Unidos</option>
-          <option value="club nautico">Club Nautico</option>
-          <option value="nacion">Club Nacion</option>
-        </select>
-      </section>
-      <section>
-        <h3>Seleccione su turno</h3>
-        <form action="">
-          <div class="form1">
-            <label id="name-label" for="name">Nombre</label>
-            <input
-              type="text"
-              name="nombre"
-              id="name"
-              class="form-control"
-              placeholder="Ingrese su nombre"
-              required
-            />
-          </div>
-          <div class="form1">
-            <label id="name-label" for="last">Apellido</label>
-            <input
-              type="text"
-              name="apellido"
-              id="last"
-              class="form-control"
-              placeholder="Ingrese su apellido"
-              required
-            />
-          </div>
-          <div class="form1">
-            <label id="name-label" for="email">Email</label>
-            <input
-              type="email"
-              name="name"
-              id="email"
-              class="form-control"
-              placeholder="Ingrese su email"
-              required
-            />
-          </div>
-          <div class="form1">
-            <label id="name-label" for="turno">Turno</label>
-            <input
-              type="datetime"
-              name="name"
-              id="turno"
-              class="form-control"
-              placeholder="Ingrese la hora de turno deseada"
-              required
-            />
-          </div>
-          <button class="boton">Solicitar turno</button>
-        </form>
-      </section>
     </main>
     <div class="pie">
       <footer>
-        <p>Copyright FeDev13 2022</p>
+        <p class="foot">Copyright FeDev13 2022</p>
       </footer>
     </div>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
 </html>
