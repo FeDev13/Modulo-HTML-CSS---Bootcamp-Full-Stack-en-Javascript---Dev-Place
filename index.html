@@ -11,95 +11,191 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3663c2d0e4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Landing Page</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <a class="navlogo">Courts Online</a>
-        <ul class="navmenu">
-          <li class="navitem">
-            <a class="navlink">Login</a>
-          </li>
-          <li class="navitem">
-            <a class="navlink">Nosotros</a>
-          </li>
-          <li class="navitem">
-            <a class="navlink">Servicio</a>
-          </li>
-          <li class="navitem">
-            <a class="navlink">Empresas</a>
-          </li>
-        </ul>
-        <button class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light" id="nav-bar">
+        <a class="navbar-brand" href="#">Courts Online</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Servicios</a>
+            <a
+              class="nav-item nav-link"
+              href="../Modulo HTML y CSS/empresas.html"
+              >Empresas</a
+            >
+          </div>
+        </div>
       </nav>
     </header>
     <main>
       <div class="intro">
-        <h1 class="welcome">Bienvenido a Courts Online</h1>
-        <p class="texto">
-          Somos la primer plataforma online de reserva de canchas de tenis
-          integrada con informacion para reservar turnos en cualquier club de la
-          ciudad
-        </p>
+        <h1 id="welcome" class="welcome">Bienvenido a Courts Online</h1>
+        <div class="descripcion">
+          <p class="texto">
+            Somos la primer plataforma online de reserva de canchas de tenis
+            integrada con informacion para reservar turnos en cualquier club de
+            la ciudad
+          </p>
+        </div>
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://tennishead.net/wp-content/uploads/2020/03/Clay-court-tennis.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://tennislovers.com/wp-content/uploads/clay-tennis-court.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/56f1b76f044262c53cf4daff/1622560706923-78OGO5507UFNP7A2D5P9/Red+Clay+court.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
       <div class="login">
         <button type="button" class="btn btn-primary" id="ingresar">
           Ingresar
         </button>
       </div>
-      <div class="contain">
-        <div class="wrapper">
-          <div class="contacts">
-            <h3>contacto</h3>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 id="caract">Caracteristicas</h2>
+            </div>
+            <div class="row text-center" id="features">
+              <div class="col-md-3" style="height: 460px">
+                <span class="fa-stack fa-4x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4>Torneos</h4>
+                <p>Coordinamos torneos internos</p>
+                <div class="bottom-button">
+                  <a class="btn btn-primary" href="">Mas info</a>
+                </div>
+              </div>
 
-            <ul>
-              <li>Courts Online</li>
-              <li>+5492235448889</li>
-              <li>courtsonline@mail.com</li>
-            </ul>
-          </div>
-
-          <div class="form">
-            <h3>Envianos tu mensaje</h3>
-            <form action="">
-              <p>
-                <label for="">Nombre de la empresa</label>
-                <input type="text" />
-              </p>
-              <p>
-                <label for="">Representante</label>
-                <input type="text" />
-              </p>
-              <p>
-                <label for="">Email</label>
-                <input type="email" />
-              </p>
-              <p>
-                <label for="">Asunto</label>
-                <input type="text" />
-              </p>
-              <p class="full-width">
-                <label for="">Escriba su mensaje</label>
-                <textarea name="" id="" cols="30" rows="7"></textarea>
-              </p>
-              <p class="full-width">
-                <button class="enviar">Enviar</button>
-              </p>
-            </form>
+              <div class="col-md-3" style="height: 460px">
+                <span class="fa-stack fa-4x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-calendar-alt fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4>Agendas tu turno por aca</h4>
+                <p>Intermediamos entre clubes socios y vos</p>
+                <div class="bottom-button">
+                  <a class="btn btn-primary" href="">Mas info</a>
+                </div>
+              </div>
+              <div class="col-md-3" style="height: 460px">
+                <span class="fa-stack fa-4x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4>Interclubes</h4>
+                <p>Inscripcion a Torneos Interclubes socios</p>
+                <div class="bottom-button">
+                  <a class="btn btn-primary" href="">Mas info</a>
+                </div>
+              </div>
+              <div class="col-md-3" style="height: 460px">
+                <span class="fa-stack fa-4x">
+                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                  <i
+                    class="fas fa-solid fa-building fa-stack-1x fa-inverse"
+                  ></i>
+                </span>
+                <h4>Empresas</h4>
+                <p>Servicios para turnos fijos de empresas</p>
+                <div class="bottom-button">
+                  <a class="btn btn-primary" href="">Mas info</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+
+      <div class="pie">
+        <footer>
+          <p class="foot">Copyright FeDev13 2022</p>
+        </footer>
       </div>
     </main>
-    <div class="pie">
-      <footer>
-        <p class="foot">Copyright FeDev13 2022</p>
-      </footer>
-    </div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
