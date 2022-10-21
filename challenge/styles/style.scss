@@ -1,3 +1,9 @@
+$colortext:rgb(22, 22, 218);
+$colorboton: black;
+
+@import "../styles/header";
+@import "../styles/navbar";
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,14 +14,7 @@ body{
     background-image: url(https://theracketlife.com/wp-content/uploads/2022/04/Can-You-Use-Hard-Court-Balls-On-Clay-Courts-01.jpg);
     background-size: cover;
 }
-header{
-    margin-bottom: 2rem;
-    background-color: transparent;
-    color: aliceblue;
-    display: flex;
-    position: sticky;
-    top: 0;
-}
+
 
 
 li {
@@ -26,23 +25,19 @@ a {
   text-decoration: none;
   color: white;
 }
-#welcome{
-    color: black;
-}
-
-.navbar {
+footer{
     background-color: transparent;
 }
-.navbar > a {
-    color: black;
-    font-size: 2rem;
-    margin-right: 7rem;
-    margin-left: 2rem;
+
+.btn{
+    background-color: $colorboton;
 }
 
-.nav-item  {
-    color: black;
+#welcome{
+    color: $colorboton;
 }
+
+
 
 .intro {
     text-align: center;
@@ -51,9 +46,7 @@ a {
     font-size: 2rem;
     color: black;
 }
-.intro > h1 {
-    color: white;
-}
+
 .texto {
     font-size: 1.5rem;
 }
@@ -69,16 +62,11 @@ a {
     margin-bottom: 7rem;
     text-align: center;
 }
-footer{
-    background-color: black;
-    bottom: 0%;
-    position:fixed;
-    width: 100%;
-    color: white;
-}
+
 #caract {
     margin-top: 3rem;
 }
 #features {
     margin-top: 5rem;
 }
+
