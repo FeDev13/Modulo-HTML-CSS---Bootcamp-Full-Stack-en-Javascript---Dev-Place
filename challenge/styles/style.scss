@@ -1,6 +1,13 @@
 $colortext:rgb(22, 22, 218);
 $colorboton: black;
 
+%descripcion {
+    display: flex;
+    margin-top: 3rem;
+    width: 40%;
+    text-align: right;
+}
+
 @import "../styles/header";
 @import "../styles/navbar";
 
@@ -51,11 +58,11 @@ footer{
     font-size: 1.5rem;
 }
 .descripcion{
-    display: flex;
-    margin-top: 3rem;
-    width: 40%;
-    text-align: right;
+    @extend %descripcion;
     
+}
+.descripcion2{
+    @extend %descripcion;
 }
 .login {
     margin-top: 3rem;
